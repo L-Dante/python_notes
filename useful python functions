@@ -12,3 +12,7 @@ random.shuffle(l: list) -> void
 # 将list里的元素进行就地随机排列，改变原始list
 random.sample(l: list, k: int) -> list
 # 从list里采样k个元素，作为列表返回，不改变原始list
+
+随机数
+uniform(x: int, y: int) -> float n
+# x <= n < y
