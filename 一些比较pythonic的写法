@@ -3,3 +3,5 @@ a, b = b, a
 
 # 判断是否包含某元素
 if x in list:
+
+# 当数据较为庞大而且不需要一次性全部使用的时候，可以采用yield each来代替return list
