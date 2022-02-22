@@ -22,3 +22,8 @@ random.uniform(x: int, y: int) -> float n
 # 相关操作
 deque.pop(), popleft(), append(), appendleft(), insert(i, a)
 # 相比较list，deque的pop操作时间复杂度更低
+
+# 字符串拆分
+list = s.split('@')
+# 字符串拼接
+s = list.join('@')
