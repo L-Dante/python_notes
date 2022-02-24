@@ -1,0 +1,8 @@
+之前一直使用anaconda自带的spyder，但是发现spyder的调试功能实在是不能满足自己的需求，居然没办法自定义想要查看的变量！（可能是我太菜了，不知道怎么添加）于是转而使用pycharm。
+但是发现一个问题，anaconda navigator里没有pycharm community只有pycharm professional，也就没办法从anaconda中打开pycharm。同时，我尝试了直接在pycharm里conda activate来切换python环境，同样也行不通。
+于是上网查攻略，如何将两者连起来。网上的做法清一色是从pycharm的settings入手，但是个人尝试后发现并没有卵用。
+于是我就想到，我平时从anaconda打开spyder，都是从anaconda powershell，也就是命令行直接打开的，那能不能同样的，在命令行直接打开pycharm呢？
+答案是 可以！
+具体做法就是打开anaconda powershell，切换环境，然后直接键入pycharm（前提是配了环境变量），这样一来打开的pycharm的环境就是自己想要的那个环境了。
+这么简单的做法网上竟然只字不提，不得不吐槽这些做攻略的人均复制粘贴大师，千篇一律，不带重样。更重要的是，命令行打开pycharm远比去settings里设置要来的方便，也来的酷的多。
+在这里分享给大家，希望日后有遇到同样困扰的朋友可以少走些弯路。
