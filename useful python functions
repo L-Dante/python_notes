@@ -27,3 +27,12 @@ deque.pop(), popleft(), append(), appendleft(), insert(i, a)
 list = s.split('@')
 # 字符串拼接
 s = str.join('@',list)
+
+# 打包与解包
+languages = ['Java', 'Python', 'JavaScript']
+versions = [14, 3, 6]
+result_list = list(zip(languages, versions))
+# Output: [('Java', 14), ('Python', 3), ('JavaScript', 6)]
+l, v = zip(*result_list)
+# l = ['Java', 'Python', 'JavaScript']
+# v = [14, 3, 6]
