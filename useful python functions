@@ -36,3 +36,9 @@ result_list = list(zip(languages, versions))
 l, v = zip(*result_list)
 # l = ['Java', 'Python', 'JavaScript']
 # v = [14, 3, 6]
+
+# 任何与全部
+# any：只要有一个True就返回True
+any([1,2,0]) #True, 因为有1和2True
+# all: 只要有一个是False就返回False
+all([1,2,0]) #False，因为0是False
