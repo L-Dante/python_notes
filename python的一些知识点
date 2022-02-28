@@ -1,4 +1,5 @@
-# 关于浅拷贝和深拷贝
+关于浅拷贝和深拷贝
+
 参考自：https://blog.csdn.net/yilovexing/article/details/88148636
 参考自：https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html
 python里有6个数据类型，可分为两类：
