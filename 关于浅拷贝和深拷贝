@@ -1,0 +1,31 @@
+关于浅拷贝和深拷贝
+
+参考自：https://blog.csdn.net/yilovexing/article/details/88148636
+参考自：https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html
+
+python里有6个数据类型，可分为两类：
+不可变数据类型： Number，String，Tuple
+可变数据类型：List，Dictionary，Set
+当改变不可变数据类型的值时，实际上是给变量重新分配了新的地址空间：
+# a = 1
+# id(a) output: 1704065250696
+# a = 2
+# id(a) output: 1704065097800
+可以看到变量a的id也就是地址是发生了改变的。
+
+而改变可变数据类型的值时，是在原地址空间上进行操作，也就是地址不变：
+# l = [1]
+# id(l) output: 1704065316488
+# l.append(2)
+# id(l) output: 1704065316488
+当然了，如果进行 "l = [1,2]"这样的赋值操作，同样会改变内存地址，相当于分配了新的地址并将l指向新地址
+
+接下来看赋值，浅拷贝与深拷贝的区别：
+直接赋值相当于引用，指向同一个地址
+浅拷贝相当于开辟新的地址并且复制父对象，但是引用内部的子对象
+# a = [1, [1, 2]]
+# b = a.copy()
+# id(a) != id(b)
+# a.append(3) output: b == [1,[1, 2]]
+# a[1].append(3) output: b == [1, [1, 2, 3]]
+至于深拷贝，完全拷贝了父对象以及子对象，没有任何引用关系，对任意一个对象进行操作都不会影响到另一个对象
