@@ -47,3 +47,8 @@ all([1,2,0]) #False，因为0是False
 # 比如计算字符串每个字符出现的次数
 frequency = collections.Counter("mississippi")
 # frequency == Counter({'i': 4, 's': 4, 'p': 2, 'm': 1})
+
+# 列表排序
+l.sort()
+# 如果有特殊要求，比如l = [[1,4],[2,3],[2,5]], 要求对第一个元素进行升序，第二个元素进行降序，那么：
+l.sort(key = lambda x : (x[0], -x[1]))
