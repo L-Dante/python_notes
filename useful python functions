@@ -52,3 +52,8 @@ frequency = collections.Counter("mississippi")
 l.sort()
 # 如果有特殊要求，比如l = [[1,4],[2,3],[2,5]], 要求对第一个元素进行升序，第二个元素进行降序，那么：
 l.sort(key = lambda x : (x[0], -x[1]))
+
+# 字典添加键值对
+dict.setdefault(key, default=value)
+如果已经存在key，返回对应value。不存在的话，添加（key，value）到字典里
+省去了判断是否存在
